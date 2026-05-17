@@ -1,0 +1,185 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Jatin C} \\ \vspace{1pt}
+    \small (9343477773) $|$ \href{mailto:jatinc2401@gmail.com}{\underline{jatinc2401@gmail.com}} $|$ 
+    \href{https://linkedin.com/in/jatin-c-sde}{\underline{linkedin.com/in/jatin-c-sde}} $|$
+    \href{https://github.com/JatinCanCode}{\underline{github.com/JatinCanCode}}
+\end{center}
+
+  
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {CMR Institute of Technology}{Bangalore}
+      {Bachelor of Engineering -- Electronics and Communication $|$ CGPA: 8.46}{2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Amadeus Software Labs}{Bangalore, India}
+      {Software Development Engineer II}{March 2025 -- Present}
+      \resumeItemListStart
+        \resumeItem{Spearheaded the organization's multicloud expansion by collaborating with architects and GCP engineers in a design hackathon to bootstrap the first GCP landing zone using GCP Fast Fabric and Terraform, running production-grade integrated workflows across Azure and GCP.}
+        \resumeItem{Productionized GCP Fast Fabric by building GitHub Actions pipelines for end-to-end infrastructure release and deployment via Terraform, enabling scalable and repeatable multicloud provisioning.}
+        \resumeItem{Architected Kubernetes Custom Resource Definitions (CRDs) using Kratix to map IDP products to Kubernetes-native resource types, managing their full lifecycle via GitOps; built a self-service developer portal using Backstage enabling on-demand provisioning of platform resources.}
+        \resumeItem{Took on a dual Product Owner and IC role for the newly formed Platform Transversal Services team; drove PI planning, cross-team alignment, and delivery of the platform serviceability roadmap across Azure and GCP.}
+        \resumeItem{Developed an AI-powered RAG system over an internal knowledge base to accelerate IDP onboarding, reducing ramp-up time for new platform users.}
+        \resumeItem{Evaluated and benchmarked IDP and IaC orchestration tools -- including Crossplane, Humanitec, Port, and Score -- against multicloud platform requirements, informing architectural decisions for the serviceability and platform engineering stack.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Development Engineer I}{Aug. 2022 -- March 2025}
+      \resumeItemListStart
+        \resumeItem{Designed and led an end-to-end Policy as Code framework for Azure using Go, Terraform, Terragrunt, Jenkins, and ServiceNow -- achieving 60\% faster policy rollout and 100\% compliance across 200+ policies; built a Go package automating pre-deployment policy effect testing, integrated directly into CI/CD pipelines.}
+        \resumeItem{Engineered modular Terraform and Terragrunt IaC for core Azure capabilities (networking, subscriptions, PaaS, middleware), orchestrating 300+ fully IaC-managed landing zones at scale and cutting deployment time by 50\%.}
+        \resumeItem{Built and maintained 10+ Splunk dashboards for end-to-end observability alongside Grafana and Prometheus real-time alerting, improving system stability by 20\%; dashboards actively referenced by product managers and architects.}
+        \resumeItem{Optimized Jenkins CI/CD pipelines with Groovy-based test and log-forwarding stages; consolidated multi-image Docker builds using Docker Buildx; automated Jenkins node autoscaling on Kubernetes with Helm.}
+        \resumeItem{Established infrastructure reliability standards by implementing Terraform unit tests in Go using Terratest, adopted as a team-wide practice.}
+      \resumeItemListEnd
+
+    \resumeSubSubheading
+      {Software Engineer Intern}{March 2022 -- Aug. 2022}
+      \resumeItemListStart
+        \resumeItem{Developed IaC modules to provision and configure Azure-managed services, reducing manual configuration time by 50\% and improving deployment consistency.}
+        \resumeItem{Automated service deployments via ServiceNow Catalogues and Flows, improving deployment efficiency by 60\% and reducing human error by 50\%.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Programming \& Scripting}{: Go, Python, Bash} \\
+     \textbf{Cloud}{: Azure, GCP} \\
+     \textbf{CI/CD}{: Jenkins, GitHub Actions, Groovy} \\
+     \textbf{Containerization}{: Docker, Kubernetes, Helm, ArgoCD} \\
+     \textbf{Infrastructure as Code}{: Terraform, Terragrunt} \\
+     \textbf{Observability}{: Prometheus, Grafana, Splunk} \\
+     \textbf{ITSM \& IDP}{: ServiceNow, Backstage, Kratix}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
